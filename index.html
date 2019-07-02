@@ -11,45 +11,60 @@
   <body>
 <h1>Movie Time!!</h1>
 <h4>Please select the movie you would like to watch </h4>
+<form id="container">
 <div class="custom-control custom-radio">
-  <input type="radio" id="avengers" name="movie" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">Avengers</label>
+  <input type="radio" id="avengers" name="movie" value="Avengers" checked>
+  <label for="customRadio1">Avengers</label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="anabelle" name="movie" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Anabelle</label>
+  <input type="radio" id="anabelle" name="movie" value="Anabelle" checked>
+  <label  for="customRadio2">Anabelle</label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="spiderman" name="movie" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Spiderman</label>
+  <input type="radio" id="spiderman" name="movie" value="Spiderman" checked>
+  <label  for="customRadio2">Spiderman</label>
 </div>
 <h4>Please select the movie times</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" id="morning" name="time" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">10am</label>
+  <input type="radio" id="morning" name="time" value="10am" checked>
+  <label  for="customRadio1">10 am</label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="afternoon" name="time" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">3pm</label>
+  <input type="radio" id="afternoon" name="time" value="3pm" checked>
+  <label  for="customRadio2">3 pm</label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="night" name="time" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">9pm</label>
+  <input type="radio" id="night" name="time" value="9pm" checked>
+  <label  for="customRadio2">9 pm</label>
 </div>
 <h4>Are you in one of this age range?</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" id="child" name="age" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">Child</label>
+  <input type="radio" id="child" name="age" value="child" checked >
+  <label  for="customRadio1">Child</label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" id="senior" name="age" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Senior</label>
+  <input type="radio" id="senior" name="age" value="senior" checked>
+  <label  for="customRadio2">Senior</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="none" name="age" value="none" checked>
+  <label  for="customRadio2">None</label>
 </div>
 <h4>Price per Ticket</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" id="price" name="prices" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">$13</label>
+  <input type="radio" id="price" name="prices" value="13" checked>
+  <label  for="customRadio1">$13</label>
 </div>
-
+<br>
+ <button type="submit" class="btn-primary">Add</button>
+</form>
+<div id="checkOut">
+  <p > Great movie choice! here is your confirmation info:</p>
+  <ul>
+    <li>Movie: <span class="movie"></span></li>
+      <li>Time: <span class="time"></span></li>
+        <li>Price: <span class="price"></span></li>
+      </ul>
+</div>
   </body>
 </html>
