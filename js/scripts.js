@@ -8,16 +8,16 @@ function Tickets (movieTitle, price, time, age) {
 
 Tickets.prototype.ageDiscount = function(){
   if (this.age  === "child"){
-    return this.price - 2;
+    return  "$-2";
   }else if (this.age === "senior"){
-    return this.price - 4;
+    return "$-2";
   }else {
     return 0;
   }
 }
 
   Tickets.prototype.timeDiscount = function(){
-    if (this.time === "10am"){
+    if (this.time === "10am" || this.age === "child" || this.age === "senior" ){
       return this.price - 2;
     }else if (this.time === "3pm"){
       return this.price + 3;
